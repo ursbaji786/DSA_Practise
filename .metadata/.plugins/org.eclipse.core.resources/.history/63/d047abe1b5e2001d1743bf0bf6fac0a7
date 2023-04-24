@@ -1,0 +1,29 @@
+package week1;
+
+public class Pyramid {
+
+	public static void main(String[] args) {
+		int i,j;
+		int my_input = 5;
+		//travel throw rows
+		/*
+		 * for (i=0; i<rows; i++) {
+		 * 
+		 * // print space for(j=rows-i; j>1 ; j--) { System.out.println(" "); } //print
+		 * star for(j=0; j<=i; j++) { System.out.println("* "); } // ending line after
+		 * each row System.out.println(); }
+		 */
+		
+		 for (i=0; i<my_input; i++){
+		        for (j=my_input-i; j>1; j--){
+		           System.out.print(" ");
+		        }
+		        for (j=0; j<=i; j++ ){
+		           System.out.print("* ");
+		        }
+		        System.out.println();
+		      }
+
+	}
+
+}
