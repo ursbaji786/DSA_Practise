@@ -11,7 +11,7 @@ public class PlusOne {
 		    for(int i=digits.length-1; i>=0; i--) {
 		    	
 		        if(digits[i] != 9) {
-		        	digits[i] = digits[i]++;
+		        	 digits[i]++; // if we assign tnis then its allocatting another space and not assigning new digit value
 		            return digits;
 		        }
 		        
@@ -19,7 +19,7 @@ public class PlusOne {
 		        digits[i] = 0;
 		    }
 		    //for single 9
-		    digits = digits[digits.length+1];
+		    digits = new int [digits.length+1];
 		    digits[0]=1;
 		    return digits;
 		    }
@@ -28,7 +28,7 @@ public class PlusOne {
 		
 		int[] digits= {1,2,3};
 		
-		plusOneMethod(digits);
+		//plusOneMethod(digits);
 		
 		System.out.println(Arrays.toString(plusOneMethod(digits)));
 		

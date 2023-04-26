@@ -1,0 +1,23 @@
+package week1;
+
+import java.util.Arrays;
+
+public class InsertValue {
+
+	public static void main(String[] args) {
+		
+		int[] a = {1,2,3,5,10};
+        int index = 2;
+        int value = 55;
+        System.out.println("Before Insert "+Arrays.toString(a) );
+ 
+        for(int i=a.length-1;i>index;i--)
+        {
+            a[i]=a[i-1];
+        }
+        a[index]=value;
+        System.out.println("After Insert "+Arrays.toString(a) );
+    
+	}
+
+}

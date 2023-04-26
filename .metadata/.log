@@ -362,3 +362,172 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2023-04-25 06:59:22.958
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.io.File.getParentFile()" because the return value of "org.apache.maven.model.Model.getPomFile()" is null
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.getProjectName(ProjectConfigurationManager.java:943)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.validate(MavenProjectWizardLocationPage.java:299)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.lambda$2(MavenProjectWizardLocationPage.java:146)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:01:44.845
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:01:44.859
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:02:14.463
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:02:14.472
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:02:54.096
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:02:54.099
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:03:12.988
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:03:12.990
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:03:25.372
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:03:25.374
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:03:28.652
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:03:28.655
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:04:08.615
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:04:08.620
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:05:46.890
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:05:46.893
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:08:41.775
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-25 07:08:41.778
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2023-04-25 07:08:49.576
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar B:\sdet-ws\DSA_DailyPractice\target\test-classes B:\sdet-ws\DSA_DailyPractice\target\classes B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52845 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse-1109453111\testng-customsuite.xml
+java -ea -classpath B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar:B:\sdet-ws\DSA_DailyPractice\target\test-classes:B:\sdet-ws\DSA_DailyPractice\target\classes:B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar:B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar:B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar:B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 52845 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse-1109453111\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2023-04-25 07:16:46.877
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar B:\sdet-ws\DSA_DailyPractice\target\test-classes B:\sdet-ws\DSA_DailyPractice\target\classes B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52896 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse--1891465716\testng-customsuite.xml
+java -ea -classpath B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar:B:\sdet-ws\DSA_DailyPractice\target\test-classes:B:\sdet-ws\DSA_DailyPractice\target\classes:B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar:B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar:B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar:B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 52896 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse--1891465716\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2023-04-25 07:16:47.342
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar B:\sdet-ws\DSA_DailyPractice\target\test-classes B:\sdet-ws\DSA_DailyPractice\target\classes B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52897 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse--2061139981\testng-customsuite.xml
+java -ea -classpath B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar:B:\sdet-ws\DSA_DailyPractice\target\test-classes:B:\sdet-ws\DSA_DailyPractice\target\classes:B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar:B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar:B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar:B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 52897 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse--2061139981\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 4 2 2023-04-25 07:16:48.158
+!MESSAGE Problems occurred when invoking code from plug-in: "org.testng.eclipse".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient$ServerConnection.getMessageSender()" because "this.m_serverConnection" is null
+	at org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient.isRunning(AbstractRemoteTestRunnerClient.java:102)
+	at org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient.stopTest(AbstractRemoteTestRunnerClient.java:109)
+	at org.testng.eclipse.ui.EclipseTestRunnerClient.stopTest(EclipseTestRunnerClient.java:28)
+	at org.testng.eclipse.ui.TestRunnerViewPart.stopTest(TestRunnerViewPart.java:331)
+	at org.testng.eclipse.ui.TestRunnerViewPart.onFinish(TestRunnerViewPart.java:1339)
+	at org.testng.eclipse.ui.SuiteRunInfo.onFinish(SuiteRunInfo.java:103)
+	at org.testng.eclipse.ui.EclipseTestRunnerClient$3.run(EclipseTestRunnerClient.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.testng.eclipse.ui.EclipseTestRunnerClient.notifySuiteEvents(EclipseTestRunnerClient.java:62)
+	at org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient$ServerConnection.run(AbstractRemoteTestRunnerClient.java:186)
+
+!ENTRY org.testng.eclipse 4 4 2023-04-25 07:16:48.159
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient$ServerConnection.getMessageSender()" because "this.m_serverConnection" is null
+	at org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient.isRunning(AbstractRemoteTestRunnerClient.java:102)
+	at org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient.stopTest(AbstractRemoteTestRunnerClient.java:109)
+	at org.testng.eclipse.ui.EclipseTestRunnerClient.stopTest(EclipseTestRunnerClient.java:28)
+	at org.testng.eclipse.ui.TestRunnerViewPart.stopTest(TestRunnerViewPart.java:331)
+	at org.testng.eclipse.ui.TestRunnerViewPart.onFinish(TestRunnerViewPart.java:1339)
+	at org.testng.eclipse.ui.SuiteRunInfo.onFinish(SuiteRunInfo.java:103)
+	at org.testng.eclipse.ui.EclipseTestRunnerClient$3.run(EclipseTestRunnerClient.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.testng.eclipse.ui.EclipseTestRunnerClient.notifySuiteEvents(EclipseTestRunnerClient.java:62)
+	at org.testng.remote.strprotocol.AbstractRemoteTestRunnerClient$ServerConnection.run(AbstractRemoteTestRunnerClient.java:186)
+
+!ENTRY org.testng.eclipse 1 0 2023-04-25 07:16:51.605
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar B:\sdet-ws\DSA_DailyPractice\target\test-classes B:\sdet-ws\DSA_DailyPractice\target\classes B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52902 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse--445579350\testng-customsuite.xml
+java -ea -classpath B:\eclipse\configuration\org.eclipse.osgi\440\0\.cp\lib\testng-remote.jar:B:\sdet-ws\DSA_DailyPractice\target\test-classes:B:\sdet-ws\DSA_DailyPractice\target\classes:B:\eclipse\plugins\org.testng_7.4.0.r202105021533.jar:B:\eclipse\plugins\com.beust.jcommander_1.78.0.jar:B:\eclipse\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:B:\eclipse\plugins\org.yaml.snakeyaml_1.27.0.v20201111-1638.jar:B:\eclipse\plugins\org.webjars.jquery_3.5.1.jar org.testng.remote.RemoteTestNG -serport 52902 -protocol json -d B:\sdet-ws\DSA_DailyPractice\test-output C:\Users\hp\AppData\Local\Temp\testng-eclipse--445579350\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-26 07:20:44.163
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-04-26 07:20:44.166
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
