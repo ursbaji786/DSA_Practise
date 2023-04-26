@@ -1,2 +1,10 @@
 *.class
 **/metadata/*
+.classpath  
+.editorconfig  
+.factorypath  
+.gitattributes  
+.project  
+.settings/  
+bin/  
+bin/
