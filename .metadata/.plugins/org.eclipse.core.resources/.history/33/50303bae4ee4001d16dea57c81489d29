@@ -1,0 +1,27 @@
+package week1;
+
+public class IsPowerOfTwo {
+
+	public static void main(String[] args) {
+		
+		int num = 10;
+		boolean out = false;
+		
+		if(num==0) {
+			System.out.println(out);
+		}
+		
+		if(num==1) {
+			out = true;
+			System.out.println(out);
+		}
+		// if modules of number is not zero then its not power of 2 so added in first if loop
+		if ( num % 2 !=0) {
+			System.out.println(out);			
+		}else out = true;
+		System.out.println(out);
+		
+
+	}
+
+}
