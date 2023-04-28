@@ -1,0 +1,26 @@
+package week1;
+
+public class MissingNumber {
+
+	public static void main(String[] args) {
+
+		int[] a = {0,1};
+		
+		int n = a.length;
+		
+		int sum =0;
+		
+		int missingNumber = 0;
+		
+		for (int i = 0; i < a.length; i++) {
+			sum = sum + a[i];		// sum of all values from array	
+		}
+		
+		missingNumber = (n*(n+1))/2 -sum ;
+		
+		System.out.println(missingNumber);
+		
+
+	}
+
+}

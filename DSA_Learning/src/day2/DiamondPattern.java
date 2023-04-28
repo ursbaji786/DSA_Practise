@@ -3,6 +3,25 @@ package day2;
 public class DiamondPattern {
 	
 	public void myMethod(int input) {
+		
+		/*Pseudo code
+		 * 
+		 *  first to print upper portion
+		 *     > outer loop to iterate over the number of rows
+		 *     > first inner loop to print spaces where j =1 and j<= input-i
+		 *     > second inner loop to print stars where j<=i*2-1
+		 *     > after each iteration of outer loop comes to new line
+		 * 
+		 * second to print lower portion
+		 *     > outer loop to iterate over the number of rows from i=input-1 to i>0
+		 *     > first inner loop to print spaces where j<= input-i
+		 *     > second inner loop to print stars where j<=i*2-1 
+		 *     > after each iteration of outer loop comes to new line
+		 *     
+		 *     Time complexity = O(n^2) ?? as iterating over the inner loops
+		 * 
+		 */
+		
 		int i,j;
 		// to print upper side
 		 for (i=1; i<=input; i++){

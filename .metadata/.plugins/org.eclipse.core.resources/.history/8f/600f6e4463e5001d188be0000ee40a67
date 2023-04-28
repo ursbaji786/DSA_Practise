@@ -1,0 +1,35 @@
+package day3;
+
+public class RightPascalTraingle {
+
+	public static void main(String[] args) {
+
+		int n = 5; // no of rows
+		
+		//travel out loop 1
+		
+		for (int i =0; i <n; i++) {
+			// print star and then space
+			
+			for (int j=0; j<=i; j++) {
+				System.out.print("*"+" ");		
+			}
+			System.out.println(); // new line after each time
+		}
+		
+		// part2 loop
+		
+		for (int i = n-1; i >=0 ; i--) {
+			// print star and then space
+			
+			for (int j=0; j<=i-1; j++) {
+				System.out.print("*"+" ");		
+			}
+			System.out.println(); // new line after each time
+		}
+		
+		
+
+	}
+
+}

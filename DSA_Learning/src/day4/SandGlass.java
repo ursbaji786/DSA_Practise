@@ -4,6 +4,24 @@ public class SandGlass {
 
 	public static void main(String[] args) {
 		
+		/*Pseudo code
+		 * 
+		 *  first to print upper portion
+		 *     > outer loop to iterate over the number of rows
+		 *     > first inner loop to print spaces where j < i
+		 *     > second inner loop to print stars where j < = n-i+1
+		 *     > after each iteration of outer loop comes to new line
+		 * 
+		 * second to print lower portion
+		 *     > outer loop to iterate over the number of rows
+		 *     > first inner loop to print spaces where j < n-i
+		 *     > second inner loop to print stars where j < = n-i+1 to j <=n
+		 *     > after each iteration of outer loop comes to new line
+		 *     
+		 *     Time complexity = O(n^2) ?? as iterating over the inner loops
+		 * 
+		 */
+		
 		int n=5;
 		
 		// outer loop to print upper part

@@ -4,6 +4,19 @@ public class RemoveAllOcuurances {
 
 	public static void main(String[] args) {
 		
+		/*Pseudo code
+		 * 
+		 * > with the given index value find the value present at that index and store as indexValue
+		 * > initialise count as 0 (used to find output array length)
+		 * > Find the count of indexValues present in the array when index value matches increment count
+		 * > create new output array with length as inputArrayLength-count
+		 * > initialise output index as 0
+		 * > move all values other than indexValues to output array and print output array 
+		 * 
+		 * 
+		 */
+		
+		
 		int[] a = {1,2,3,3,4,5,3,2,3,9};
 		int index = 2;
 		int indexValue = 0;

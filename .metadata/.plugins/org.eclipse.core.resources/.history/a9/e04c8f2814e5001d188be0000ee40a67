@@ -1,0 +1,29 @@
+package day4;
+
+import org.testng.annotations.Test;
+
+public class MissingNumberNOUSE {
+	
+	/*Psedudo code
+	 * 
+	 *   n*(n+1)/2 > arthematic progress (sum of n natural numbers
+	 *   
+	 *   sum of elements in array
+	 *   
+	 *   then missing number is n*(n+1)/2 - sum of elements in array
+	 * 
+	 */
+	
+	@Test
+	public void ex() {
+		int[] a = {0,1,2,3,5};
+		findMissingNumber(a);
+	}
+
+	private void findMissingNumber(int[] a) {
+		
+		System.out.println("inside the method");
+		
+	}
+
+}

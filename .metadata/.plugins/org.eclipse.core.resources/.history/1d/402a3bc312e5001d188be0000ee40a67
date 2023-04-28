@@ -1,0 +1,15 @@
+package day4;
+
+public class MissingNumber {
+	
+	public void ex() {
+		int[] a = {0,1,2,3,5};
+		findMissingNumber(a);
+	}
+
+	private void findMissingNumber(int[] a) {
+		System.out.println("inside the method");
+		
+	}
+
+}

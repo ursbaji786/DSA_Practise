@@ -1,0 +1,25 @@
+package day2;
+
+public class FirstAndLastOccurance {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1,2,3,4,5,1};
+		int num = 1;
+	
+	int firstIndex = -1;
+	int lastIndex = -1;
+
+	for (int i = 0; i < arr.length; i++) {
+		if (arr[i] == num) {
+			if (firstIndex == -1) {
+				firstIndex = i;
+			}
+			lastIndex = i;
+		}
+	}
+	
+	System.out.println(firstIndex, lastIndex);
+	}
+
+}
